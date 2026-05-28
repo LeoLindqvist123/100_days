@@ -1,14 +1,13 @@
 class User:
-    def __init__(self):
-        print("new user beign created")
+    def __init__(self, user_id, username):
+        self.id = user_id
+        self.username = username
+        
 
-
-user_1 = User()
-user_1.id = "001"
-user_1.username = "Leo"
+user_1 = User("001", "Leo")
 
 print(user_1.username)
 
-user_2 = User()
-user_2.id = "002"
-user_2.username = "Leona"
+user_2 = User("002", "Leona")
+
+print(user_2.username and user_2.id)
