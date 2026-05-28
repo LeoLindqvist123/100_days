@@ -1,10 +1,8 @@
-from prettytable import PrettyTable
+from menu import Menu
+from coffee_maker import CoffeeMaker
+from money_machine import MoneyMachine
 
-table = PrettyTable()
+reporty = CoffeeMaker
 
-table.add_column("Pokomane", ["pikachu", "Combee", "Pichu"])
-table.add_column("Type", ["Electric", "Dont know", "Electric"])
-
-
-
-print(table)
+reporty.report()
+print(reporty)
