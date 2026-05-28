@@ -14,22 +14,6 @@ Each day has its own folder with the project code and a short note on what I lea
 
 ---
 
-## 🗂️ Repo Structure
-
-```
-100-days-of-code-python/
-├── day-001/          # Band Name Generator
-├── day-002/          # Tip Calculator
-├── ...
-└── README.md
-```
-
-Each folder contains:
-- `main.py` – the project code
-- (optional) `notes.md` – key takeaways from that day
-
----
-
 ## 📈 Progress
 
 | Day | Project | Topics | Done |
