@@ -14,10 +14,14 @@ def random_col():
 
 tim.speed("fastest")
 
-for i in range(100):
-    tim.color(random_col())
-    tim.circle(100)
-    current_heading = tim.heading()
+def draw_spirograph(size_of_gap):
+   for i in range(int(360 // size_of_gap)):
+       tim.color(random_col())
+       tim.circle(100)
+       current_heading = tim.heading()
+       tim.setheading(current_heading + size_of_gap)
+
+draw_spirograph(5)
 
 
 screen = t.Screen()
