@@ -12,12 +12,12 @@ def random_col():
    random_col = (r, g, b)
    return random_col
 
-tim.color(random_col())
 tim.speed("fastest")
-tim.circle(100)
-current_heading = tim.heading()
-tim.setheading(current_heading + 10)
-tim.circle(100)
+
+for i in range(100):
+    tim.color(random_col())
+    tim.circle(100)
+    current_heading = tim.heading()
 
 
 screen = t.Screen()
