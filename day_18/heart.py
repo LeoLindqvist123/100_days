@@ -4,6 +4,7 @@ from turtle import Turtle, Screen
 leona_the_turtle = Turtle()
 leona_the_turtle.shape("turtle")
 leona_the_turtle.color("blue")
+leona_the_turtle.speed("fastest")
 
 def curve():
     for i in range(200):
