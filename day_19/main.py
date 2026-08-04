@@ -2,7 +2,7 @@ from turtle import Turtle, Screen
 import turtle as t
 import random
 
-leo = Turtle()
+leo = t.Turtle()
 screen = Screen()
 leo.shape("turtle")
 t.colormode(255)
@@ -11,7 +11,7 @@ def random_color():
    r = random.randint(0, 255)
    g = random.randint(0, 255)
    b = random.randint(0, 255)
-   random_col = (r, g, b)
+   random_color = (r, g, b)
    return random_color
 
 def move_forwards():
