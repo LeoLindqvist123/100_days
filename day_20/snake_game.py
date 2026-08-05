@@ -1,4 +1,5 @@
 from turtle import Turtle, Screen
+import time
 
 
 screen = Screen()
@@ -19,12 +20,13 @@ for posistion in starting_posistions:
     segments.append(new_segment)
 
 
-screen.update()
-
 game_is_on = True
 while game_is_on:
-    for seg in segments:
-        seg.forward(20)
+    screen.update()
+    time.sleep(0.1)
+
+    for seg_num in range(start= , stoper= , step=)
+        
 
 
 
