@@ -1,19 +1,38 @@
 from turtle import Turtle, Screen
 
-all_squares = []
-x_posistions = [-20, -40, 0]
-
-for square_index in range(0, 3):
-    new_square = Turtle(shape="square")
-    new_square.color("white")
-    new_square.penup()
-    new_square.goto(x=x_posistions[square_index], y=0)
-    all_squares.append(new_square)
 
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
 screen.title("Leos Game")
+screen.tracer(0)
+
+starting_posistions = [(0, 0), (-20, 0), (-40, 0)]
+
+segments = []
+
+for posistion in starting_posistions:
+    new_segment = Turtle(shape="square")
+    new_segment.color("white")
+    new_segment.penup()
+    new_segment.goto(posistion)
+    segments.append(new_segment)
+
+
+screen.update()
+
+game_is_on = True
+while game_is_on:
+    for seg in segments:
+        seg.forward(20)
+
+
+
+
+
+
+
+
 
 
 
