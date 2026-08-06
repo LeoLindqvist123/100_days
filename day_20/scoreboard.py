@@ -8,12 +8,15 @@ class Scoreboard(Turtle):
         self.hideturtle()
         self.penup()
         self.goto(0, 260)
-        self.write(f"Poäng: {self.score}", align="center", font=("Arial", 24, "normal"))
+        self.update_scoreboard()
 
+    def update_scoreboard(self):
+        self.write(f"Poäng: {self.score}", align="center", font=("Arial", 24, "normal"))
 
     def increase_score(self):
         self.score += 1
-        self.write(f"Poäng: {self.score}", align="center", font=("Arial", 24, "normal"))
+        self.clear()
+        self.update_scoreboard()
 
 
 
