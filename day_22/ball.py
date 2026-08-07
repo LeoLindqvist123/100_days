@@ -1,14 +1,17 @@
 from turtle import Turtle
 
 class Ball(Turtle):
-    def __init__(self, posistion):
+    def __init__(self):
         super().__init__()
 
         self.shape("circle")
-        self.color("blue")
-        self.shapesize(width= 20, height= 20)
+        self.color("white")
         self.penup()
-        self.ycor(0)
+
+    def move(self):
+        new_x = self.xcor() + 10
+        new_y = self.ycor() + 10
+        self.goto(new_x, new_y)
 
 
 
