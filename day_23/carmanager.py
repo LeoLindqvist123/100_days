@@ -8,10 +8,12 @@ MOVE_INCREMENT = 10
 
 class CarManager(Turtle):
     def __init__(self):
-        super().__init__()
 
-        self.shape("square")
-        self.random.int(COLORS)
+        all_cars = []
 
-    def move(self):
-        pass
+    def create_cars(self):
+        new_car = Turtle("square")
+        new_car.shapesize(stretch_wid=2, stretch_len=1)
+        new_car.penup()
+        new_car.color(random.choice(COLORS))
+        random_y = random.randint(-250, 250)
