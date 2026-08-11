@@ -1,4 +1,4 @@
-import csv
+'''import csv
 
 with open("weather_data.csv") as data_file:
     data = csv.reader(data_file)
@@ -7,3 +7,14 @@ with open("weather_data.csv") as data_file:
         if row[1] != "temp":
             temperatures.append(int(row[1]))
     print(temperatures)
+
+'''
+
+import pandas
+
+data = pandas.read_csv("weather_data.csv")
+
+temp_list = data["temp"].to_list()
+print(len(temp_list))
+
+print(data["temp"].max())
