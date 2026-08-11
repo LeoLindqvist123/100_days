@@ -14,7 +14,11 @@ import pandas
 
 data = pandas.read_csv("weather_data.csv")
 
-temp_list = data["temp"].to_list()
-print(len(temp_list))
+#temp_list = data["temp"].to_list()
+#print(len(temp_list))
 
-print(data["temp"].max())
+#print(data["temp"].max())
+
+#print(data[data.day == "Monday"])
+
+print(data[data.temp == data.temp.max()])
